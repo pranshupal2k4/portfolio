@@ -357,6 +357,9 @@ footer {
   .left{
      width:100%;
   }
+  .box{
+    width:100%;
+  }
 }
 
 
@@ -407,4 +410,5 @@ td:first-child{
 .intern{
   background-color: #cee8df;
 }
+
 
