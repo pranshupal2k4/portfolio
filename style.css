@@ -347,7 +347,7 @@ footer {
     padding: 10px 0;
 }
 
-@media screen and (max-width:100%) {
+@media screen and (max-width:600px) {
    #imag{
   width: 100%;
   height: auto;
@@ -417,3 +417,4 @@ td:first-child{
 .half p{
   text-align: left;
 }
+
