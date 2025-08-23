@@ -5,91 +5,231 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Used for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-      <div class="scroll-button"></div>
-      <nav>
-          <div class="navbar">
-              <div class="logo">
-                <a href="#home">Portfolio</a>
-            </div>
-              <div class="menu">
-                  <li><a href="#home">Home</a></li>
-                 <li> <a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                 <li><a href="#services">Services</a></li>
-                  <li><a href="#portfolio">Projects</a></li>
-                 <li><a href="#contact">Contact</a></li>
-              </div>
-              <div class="media-icons">
-                  <a href="https://www.instagram.com/pranshu_pal_2k4/">
-                    <img src="C:\Users\dell\Desktop\download.jpg" alt="Instagram" style="width:22px;height:22px;">
-                  </a>
-                  <a href="https://www.linkedin.com/in/pranshu-pal-7363b02a9">
-                    <img src="https://github.com/pranshupal2k4/portfolio/blob/main/images.jpg" alt="LinkedIn" style="width:22px;height:22px;">
-                  </a>
-                  <a href="https://wa.me/+919026855032">
-                    <img src="C:\Users\dell\Desktop\download.png" alt="WhatsApp" style="width:22px;height:22px;">
-                  </a>
-                  <a href="https://github.com/pranshupal2k4">
-                    <img src="c:\Users\dell\Desktop\GitHub-Mark-ea2971cee799.png" alt="GitHub" style="width:22px;height:22px;">
-                  </a>
-                  <a href="tel:+919026855032"><i class="material-icons">call</i></a>
-                  <a href="sms:+919026855032"><i class="material-icons">chat</i></a>
-              </div>
-          </div>
-      </nav>
-      <!-- Home Section Start -->
-     <section id="home" class="hero-section">
-  <div class="hero-content">
-    <img src="C:\Users\dell\Desktop\banner.jpg" alt="Banner Photo" class="banner-photo" 
-                style="width:100%;max-height:600px;object-fit:cover;border-radius:12px;margin-bottom:24px;">
-    <h1>Hi, I'm <span class="highlight">Pranshu pal</span></h1>
-    <h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
-    <p>Frontend Developer | C++ Learner </p>
-    
-    <div class="hero-buttons">
-      <a href="#portfolio" class="btn primary">View Projects</a>
-      <a href="C:\Users\dell\Desktop\resume (2).pdf" class="btn secondary" download>Download CV</a>
-    </div>
-  </div>
-</section>
-      <!-- About Section Start -->
-      <section class="about" id="about">
-          <div class="content">
-              <div class="title"><span>About Me</span></div>
-              <div class="about-details">
-                  <div class="left">
-                      <img src="C:\Users\dell\Desktop\my-img.jpg" alt="Developer" />
-                  </div>
-                  <div class="right">
-                      <div class="topic">Designing Is My Passion</div><p>
-                        I’m Pranshu pal, a frontend developer passionate about building responsive, user-friendly web applications
-                         that merge clean UI with dynamic functionality. Currently I am pursuing Bachelor Of Technology(B.Tech.)
-                         in Computer Science And Engineering(C.S.E.) from Krishna Institute Of Technology, Kanpur.
-                        Where I built real-world projects like a Unit Converter(Can convert number-base, temperature, width, area, currency etc),
-                        Simple Banking System (C++), and an eCommerce platform with dynamic pricing and smart cart flows.
 
-                        My core strengths lie in HTML, CSS, JavaScript, C++, C programming language — and I love refining code 
-                        until it’s fast, scalable, and intuitive. I believe design isn’t just how things look—it’s how they work.
-                        Currently, I’m focused on improving my GitHub visibility, posting developer insights on LinkedIn, and collaborating on projects 
-                        that solve real-world challenges.
-                      </p>
-                      <div class="button">
-                        <a href="C:\Users\dell\Desktop\resume (2).pdf">
-  	                       <button>Download CV</button>
-                        </a>
-                      </div>
-                  </div>
+    <div class="scroll-button"></div>
+      <header class="animated-name">
+            <a href="#home">
+                <span class="animated-text">Pranshu pal's Portfolio</span>
+            </a>
+      </header>
+
+      <nav>
+       <div class="navbar">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#journey">Journey</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Projects</a>
+               <a href="#contact">Contact</a>
+               
+            <div class="nav-media">
+               <a href="https://www.instagram.com/pranshu_pal_2k4/" onclick="myfun()">
+                    <i class="fa fa-instagram" style="font-size:20px;color:red"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/pranshu-pal-7363b02a9" onclick="myfun()">
+                    <i class="fa fa-linkedin-square" style="font-size:20px;color:blue"></i>
+                  </a>
+                  <a href="https://wa.me/+919026855032" onclick="myfun()">
+                    <i class="fa fa-whatsapp" style="font-size:20px;color:rgb(61, 222, 61)"></i>
+                  </a>
+                  <a href="https://github.com/pranshupal2k4" onclick="myfun()">
+                    <i class="fa fa-github" style="font-size:20px;color:rgb(0, 0, 255)"></i>
+                  </a> 
+                  <a href="tel:+919026855032" onclick="myfun()">
+                    <i class="fa fa-phone" style="font-size:20px;color:blue"></i>
+                </a>
               </div>
-          </div>
-      </section>
+              
+            </div>
+      </nav>
+
+
+<!-- Home Section Start -->
+
+
+<section id="home" class="home active">
+    <img src="C:\Users\dell\Desktop\banner.jpg" alt="Banner Photo" 
+                style="width:100%;max-height:600px;object-fit:cover;border-radius:12px;margin-bottom:24px;">
+    <h1>Hi, I'm <span class="highlight"> Pranshu pal </span></h1>
+    <h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+    <br>
+    <p>Frontend Developer | C++ Learner</p> 
+    <br> <br>
+    <a href="#portfolio" class="btn primary">View Projects</a>
+    <a href="C:\Users\dell\Desktop\resume (2).pdf" class="btn secondary" download>Download CV</a>
+</section>
+
+
+<!-- About Section Start -->
+
+<section class="about" id="about">
+
+        <div class="title">
+            <span>About Me</span>
+        </div>
+        <div class="content">
+            <div class="profile">
+                <a target="_blank" href="C:\Users\dell\Desktop\my-img.jpg">
+            <img id="imag" src="C:\Users\dell\Desktop\my-img.jpg" alt="Developer" width="30%" height="30%"/>       
+            </a>
+        </div>
+            <div class="text">
+            <p>
+            I’m Pranshu pal, a frontend developer passionate about building responsive, user-friendly web applications
+            that merge clean UI with dynamic functionality. Currently I am pursuing Bachelor Of Technology(B.Tech.)
+            in Computer Science And Engineering(C.S.E.) from Krishna Institute Of Technology, Kanpur.
+            Where I built real-world projects like a Unit Converter(Can convert number-base, temperature, width, area, currency etc),
+            Simple Banking System (C++), and an eCommerce platform with dynamic pricing and smart cart flows.
+
+            My core strengths lie in HTML, CSS, JavaScript, C++, C programming language — and I love refining code 
+            until it is fast, scalable, and intuitive. I believe design is not just how things look—it’s how they work.
+            Currently, I’m focused on improving my GitHub visibility, posting developer insights on LinkedIn, and collaborating on projects 
+            that solve real-world challenges.
+            </p>
+           
+        </div> 
+        </div> 
+        <div class="buton">
+           <a href="C:\Users\dell\Desktop\resume (2).pdf">
+  	            <button >Download CV</button>
+           </a>
+    </div>
+   
+</section>
+
+<!-- Journey Section Start -->
+
+<section class="journey" id="journey">
+
+        <div class="title">
+            <span>My Journey</span>
+        </div>
+
+<h2>Education</h2>
+
+<div class="tablecontainer">
+  <table>
+    <tr>
+      <th>Course-Name</th>
+      <th>College/School Name</th>
+      <th>University/Board</th>
+      <th>Percentage</th>
+      <th>Marksheet</th>
+      <th>Passing year</th>
+    </tr>
+    <tr>
+      <td>Bachelor Of Technology [Computer Science & Engineering]</td>
+      <td>Krishna Institute Of Technology, Kanpur</td>
+      <td>Dr. A.P.J. Abdul Kalam Technical University, Lucknow, U.P.</td>
+      <td>77%(Till now)</td>
+      <td><a href="C:\Users\dell\Downloads\result.btech.pdf" alt="Roll no:- 2203510100063, DOB:- 18/12/2004">See B.tech result</a></td>
+      <td>2026</td>
+    </tr>
+    <tr>
+      <td>INTERMEDIATE EDUCATION</td>
+      <td>Buddha Lal Verma Inter College, Bhewan, Kanpur Dehat</td>
+      <td> UP BOARD </td>
+      <td>78.6%</td>
+      <td><a href="C:\Users\dell\Desktop\12th marksheet.pdf" alt="Roll no:- 2225963713, DOB:- 18/12/2004">See 12th result</a></td>
+      <td>2022</td>
+    </tr>
+    <tr>
+      <td> HIGH-SCHOOL EDUCATION</td>
+      <td>Buddha Lal Verma Inter College, Bhewan, Kanpur Dehat</td>
+      <td>UP BOARD</td>
+      <td>83.33%</td>
+      <td><a href="C:\Users\dell\Desktop\10th marksheet.pdf" alt="Roll no:- 1294808, DOB:- 18/12/2004">See 10th result</a></td>
+      <td>2020</td>
+    </tr>
+  </table>
+</div>
+
+
+<h2>Training/Certificates</h2>
+
+<div class="tablecontainer">
+  <table>
+    <tr>
+      <th>Training-Name</th>
+      <th>Issuing Organization</th>
+      <th>Description</th>
+      <th>Certificate</th>
+      <th>Duration</th>
+    </tr>
+
+    <tr class="intern">
+      <td>Web development Intern</td>
+      <td>Sly Solutions</td>
+      <td>
+        Successfully completed a one-month Web Development Internship at Sly Solutions, a solid 
+        understanding of web technologies, and receiving outstanding remarks for code quality, 
+        problem-solving, and professional dedication. Developed and maintained responsive web pages using HTML, CSS and JavaScript.</td>
+      <td><a href="C:\Users\dell\Desktop\intern.pdf" alt="CIN: SLY/JUNE25/092">Internship Certificate</a> </td>
+      <td>23 June 2025 to 23 July 2025</td>
+    </tr>
+
+    <tr>
+      <td>Data Structure & Algorithms</td>
+      <td>RCPL</td>
+      <td>Completed training in Data Structures and Algorithms with Grade A. 
+        Learned important concepts like arrays, linked lists, stacks, queues, 
+        trees, graphs, and algorithm analysis, which improved my problem-solving and coding skills.</td>
+      <td><a href="https://www.linkedin.com/posts/pranshu-pal-7363b02a9_datastructures-algorithms-training-activity-7322624915268927488-YGyK?utm_source=share&utm_medium=member_android&rcm=ACoAAEpGcxoBleIvviwVPESskaf7-i21WKFzte0"
+         alt="Loading Error">DSA certificate</a> </td>
+      <td>9th  Sep 2024 to 18th  Dec 2024</td>
+    </tr>
+    <tr>
+      <td> Java Language</td>
+      <td>KTCS</td>
+      <td>Completed training in Java Programming,
+        learning core concepts of object-oriented programming and practical coding skills.</td>
+      <td><a href="https://drive.google.com/file/d/1zd6f4fPTnKvKAYKy-3IzHfU4UMqRHKIJ/view?usp=drivesdk" alt="Loading Error">Java certificate</a> </td>
+      <td>1st  May 2023 to 30th  July 2023</td>
+    </tr>
+    <tr>
+      <td>C Language</td>
+      <td>PRUTOR@IITK</td>
+      <td>This course provided in-depth knowledge of C programming concepts including data types, 
+        control structures, functions, arrays, pointers, and memory management. Strengthened problem-solving and 
+        logical thinking skills through hands-on coding assignments and practical exercises.</td>
+      <td><a href="https://drive.google.com/file/d/1gyFOcLf6Cb_rX-5sxxcQ_XhEo2hdcbml/view?usp=drivesdk" alt="Loading Error">C Language certificate</a></td>
+      <td>30th  Oct 2022 to 25th Jan 2023</td>
+    </tr>
+     <tr>
+      <td>Internet of Things (IOT)</td>
+      <td>Sofcon India Pvt. Ltd.</td>
+      <td>Participated in a 2-day training program on IoT conducted by Sofcon India Pvt. Ltd. under Skill India & NSDC. 
+        Learned the basics of IoT, including device connectivity, applications, and real-world use cases.</td>
+      <td><a href="https://drive.google.com/file/d/1zkzAOkX-iqihE5zGrnaNYQtB7OxnkXB8/view?usp=drivesdk" alt="Loading Error">IOT Certificate</a> </td>
+      <td>30th Jan 2024 to 31th Jan 2024</td>
+    </tr>
+     <tr>
+      <td>Cyber Security Awareness Program </td>
+      <td>Innovative Ideas Infotech</td>
+      <td>
+        Participated in a Cyber Security Awareness Workshop organized by Innovative Ideas Infotech Society
+        in association with AKTU & UP Police. Gained awareness about cyber threats, online safety practices, 
+        and preventive security measures.</td>
+      <td><a href="https://drive.google.com/file/d/1-3zofmuEpRsIucXdjCRNmeo6mDKfA-Dr/view?usp=drivesdk" alt="Loading Error">Cyber-security awareness certificate</a> </td>
+      <td>24th Nov 2022</td>
+    </tr>
+  </table>
+</div>
+        
+</section>
+
+
       <!-- My Skill Section Start -->
       <!-- Section Tag and Other Div will same where we need to put same CSS -->
       <section class="skills" id="skills">
-          <div class="content">
-              <div class="title"><span>My Skills</span></div>
+              <div class="title">
+                <span>My Skills</span>
+            </div>
                   
                   <div class="boxes">
                       <div class="box">
@@ -128,11 +268,9 @@
                             
                         </div>
                     </div>
-          </div>
       </section>
       <!-- My Services Section Start -->
       <section class="services" id="services">
-          <div class="content">
               <div class="title"><span>My Services</span></div>
               <div class="boxes">
                   <div class="box">
@@ -149,10 +287,8 @@
                       <p>Creating games or game engines using C++ for high-performance applications.</p>
                   </div>
               </div>
-          </div>
       </section>
       <section class="portfolio" id="portfolio">
-          <div class="content">
               <div class="title"><span>My Project</span></div>
               <div class="boxes">
                     <div class="box">
@@ -172,6 +308,7 @@
                         <div class="topic">
                             Unit Converter
                         </div>
+                        </a>
                         <p>
                         An intuitive web-based unit converter built with HTML, CSS, and JavaScript. 
                         It supports real-time conversion across multiple categories including:
@@ -185,7 +322,6 @@
                         </ul>
                         Features a clean UI, live updates, and dropdown selectors for quick and accurate conversions.
                         </p>
-                        </a>
                     </div>
                    <div class="box">       
                    <div class="topic">
@@ -205,6 +341,7 @@
                     </p>
                 </div>
                 <div class="box">
+                    
                   <div class="topic">
                       E-commerce Shopping Website 
                   </div>
@@ -212,6 +349,17 @@
                         - Integrated secure payment module (demo only).  
                         - Enhanced user experience through intuitive navigation and responsive design.
                      </p>
+                </div>
+                <div class="box">
+                    <a href="https://pranshupal2k4.github.io/tic-tac-toe/">
+                        <div class="topic">
+                            Tic-Tac-Toe Game
+                        </div>
+                        </a>
+                        <p>
+                            A simple two-player Tic-Tac-Toe game built with HTML, CSS, and JavaScript. 
+                            Features real-time win detection, responsive design, and a clean UI for smooth gameplay.
+                        </p>
                 </div>
 
                 <div class="box">
@@ -235,15 +383,7 @@
                             using keyboard inputs to collect food, grow in size, and avoid collisions with the walls or itself.
                         </p>
                 </div>
-                 <div class="box">
-                        <div class="topic">
-                            Tic-Tac-Toe Game
-                        </div>
-                        <p>
-                            A simple two-player Tic-Tac-Toe game built with HTML, CSS, and JavaScript. 
-                            Features real-time win detection, responsive design, and a clean UI for smooth gameplay.
-                        </p>
-                </div>
+                 
                  <div class="box">
                         <div class="topic">
                            Train Ticket Booking System
@@ -265,78 +405,68 @@
 
     
             </div>
-        </div>
       </section>
       <!-- Contact Me section Start -->
-      <section class="contact" id="contact">
-          <div class="content">
-              <div class="title"><span>Contact Me</span></div>
-               <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Let’s collaborate! Whether it’s a freelance project or a full-time opportunity, I’d love to hear from you.</p>
-                    <div class="icons">
-                        <div class="row">
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Pranshu Pal</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Kanpur, Uttar Pradesh, India</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="info">
-                                <div class="head">Phone No.</div>
-                                <div class="sub-title">+91 9026855032</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">pranshupal0000@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
-                 <div class="text" style="text-align: center;">
-                  <div class="topic" >Have Any Project?</div>
-                  <p>Let’s collaborate! Whether it’s a freelance project or a full-time opportunity,
-                     I’d love to hear from you.</p>
-                  <div class="button">
-                      <a href="https://wa.me/+919026855032"">
-  	                       <button>Let's Chat</button>
-                        </a>
-                  </div>
-              </div>
+<section class="contact" id="contact">
+    <div class="title">
+        <span>Contact Me</span>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div>
+               <h2>Get in Touch</h2> 
             </div>
-          </div>
-      </section>
+            <p>
+                <br>
+                Let’s collaborate! Whether it’s a freelance project or a full-time opportunity, I’d love to hear from you.</p>
+                    <br>
+                    <div class="info">
+                        <p><span class="dark">Name: </span> Pranshu Pal</p>
+                        <p><span class="dark">Address:</span> Kanpur, Uttar Pradesh, India</p>
+                        <p><span class="dark">Phone No.:</span> +91 9026855032</p>
+                        <p><span class="dark">Alternate No.:</span> +91 8417086547</p>
+                        <p><span class="dark">Email: </span>pranshupal0000@gmail.com</p>
+                    </div>
+                    <br><br>
+        </div>
+        <div class="left">
+            <h2>Message me</h2> 
+            <br>
+            <form action="https://formsubmit.co/pranshupal90268@gmail.com" id="contact-form" method="POST">
+                <label for="fname">Name:  </label>
+                    <input type="text" id="fname" name="name" placeholder="Your Name" required>
+                    <br><br>
+                <label for="mail">Email: </label>
+                    <input type="email" id="mail" name="email" placeholder="Email" required><br><br>
+                <label for="sub">Message:</label>
+                    <input type="text" id="sub" placeholder="Message" required><br><br>
+                <div class="button-area">
+                    <button type="submit">Send message</button>
+                </div>
+            </form>
+            <br>
+            <h2 id="mess-sent" style="color: green; font-weight: bolder; display: none;">
+                Your message has been sent successfully!
+            </h2>
+            <h2 id="mess-error" style="color: red; font-weight: bolder; display: none;">
+                Something went wrong. Please try again!
+            </h2><br>
+        </div>
+        
+        <div class="out-div">
+            <h2>Have Any Project?</h2>
+            <p><br>
+                Let’s collaborate! Whether it’s a freelance project or a full-time opportunity,
+                I’d love to hear from you.<br><br>
+            </p>
+            <div class="button">
+                <a href="https://wa.me/+919026855032">
+  	                <button>Let's Chat</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
       <!-- Footer Section Start -->
       <footer>
           <div class="text">
@@ -344,28 +474,6 @@
           </div>
       </footer>
       <script src="script.js"></script>
-      <script>
-const roles = ["Frontend Developer", "C++ Learner"];
-let i = 0, j = 0, current = "", isDeleting = false;
-
-function type() {
-  const typedText = document.querySelector(".typed-text");
-  if (!typedText) return;
-  current = roles[i];
-  typedText.textContent = current.slice(0, j);
-
-  if (!isDeleting && j < current.length) {
-    j++; setTimeout(type, 120);
-  } else if (isDeleting && j > 0) {
-    j--; setTimeout(type, 60);
-  } else {
-    isDeleting = !isDeleting;
-    if (!isDeleting) i = (i + 1) % roles.length;
-    setTimeout(type, 800);
-  }
-}
-document.addEventListener("DOMContentLoaded", type);
-</script>
 
   </body>
 </html>
