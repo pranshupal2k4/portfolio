@@ -37,6 +37,7 @@
 }
 
 .animated-text {
+  width: 100%;
   display: inline-block; /* Crucial for transform to work on inline elements */
   animation: my-animation 3s ease-in-out infinite alternate; /* Apply animation to the text only */
 }
@@ -246,8 +247,7 @@ button {
   transition: all 0.4s ease;
 }
 .box:hover{
-  background: #9945e7;
-  color: #fff;
+  background: #ffffff;
 }
 .topic{
   font-size: 1.9rem;
@@ -347,13 +347,13 @@ footer {
     padding: 10px 0;
 }
 
-@media screen and (max-width:600px) {
-#imag{
-      width: 80%;
-      height: auto;
-      margin: 0 auto;
-      display: block;
-   }
+@media screen and (max-width:100%) {
+   #imag{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
   .left{
      width:100%;
   }
@@ -384,19 +384,15 @@ footer {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: auto;
+  height: auto;
   border: 1.5px solid #2c2828;
-   font-size:1rem;
-   text-align: center;
+  text-align: center;
 }
 
 th, td {
    border: 1.5px solid #2c2828;
-   padding: 8px;
-   font-size:1rem;
-   text-align: center;
-  overflow: auto;
-
+   text-align: center; 
 }
 td:first-child{
    border: 1.5px solid #2c2828;
@@ -411,4 +407,13 @@ td:first-child{
   background-color: #cee8df;
 }
 
-
+.half{
+  float: inline-start;
+  width: auto;
+  padding: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.half p{
+  text-align: left;
+}
