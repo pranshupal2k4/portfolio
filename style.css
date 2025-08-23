@@ -382,13 +382,17 @@ footer {
 table {
   border-collapse: collapse;
   width: 100%;
+  border: 1.5px solid #2c2828;
+   font-size:1rem;
+   text-align: center;
 }
 
-table, th, td {
+th, td {
    border: 1.5px solid #2c2828;
    padding: 8px;
    font-size:1rem;
    text-align: center;
+  overflow: auto;
 
 }
 td:first-child{
@@ -403,3 +407,4 @@ td:first-child{
 .intern{
   background-color: #cee8df;
 }
+
