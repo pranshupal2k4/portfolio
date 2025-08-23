@@ -378,7 +378,6 @@ footer {
 }
 
 .tablecontainer {
-  overflow-x: auto;
   background-color: #f9f4f4;
 }
 
@@ -417,4 +416,5 @@ td:first-child{
 .half p{
   text-align: left;
 }
+
 
