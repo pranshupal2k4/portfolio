@@ -348,12 +348,12 @@ footer {
 }
 
 @media screen and (max-width:600px) {
-   #imag{
-  width: 100%;
-  height: auto;
-  margin-left:25%;
-  margin-right: 25%;
-}
+#imag{
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+   }
   .left{
      width:100%;
   }
@@ -387,7 +387,9 @@ table {
 table, th, td {
    border: 1.5px solid #2c2828;
    padding: 8px;
+   font-size:1rem;
    text-align: center;
+
 }
 td:first-child{
    border: 1.5px solid #2c2828;
