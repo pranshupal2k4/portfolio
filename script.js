@@ -22,28 +22,22 @@ const form = document.getElementById("contact-form");
 const message = document.getElementById("mess-sent");
 const error = document.getElementById("mess-error");
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
-  let formData = new FormData(form);
 
-  try {
-    let response = await fetch(form.action, {
-      method: form.method,
-      body: formData
-    });
-
-    if (response.ok) {
-      form.reset(); // clear the form
-      message.style.display = "block";
-      error.style.display = "none";
-    } else {
-      throw new Error("Form submission failed");
-    }
-  } catch (err) {
-    message.style.display = "none";
-    error.style.display = "block";
-  }
-});
 function myfun(){
   alert("Thanks to connect with me!");
 }
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent normal form submission
+
+    let name = document.getElementById("fname").value;
+    let email = document.getElementById("mail").value;
+    let message = document.getElementById("sub").value;
+
+    // Replace with your WhatsApp number (with country code, no "+" or leading zeros)
+    let phoneNumber = "9026855032";  
+
+    let whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    window.open(whatsappURL, "_blank");
+  });
