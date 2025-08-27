@@ -3,27 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  scroll-behavior: smooth;
-}
-/* Custom Scroll Bar CSS */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
 }
 
 .animated-name {
@@ -321,6 +300,16 @@ letter-spacing: 1.5px;
 .out-div{
   clear: both;
 }
+.half{
+  float: inline-start;
+  width: auto;
+  padding: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.half p{
+  text-align: left;
+}
 /*Form section*/
 
 input[type=email]{
@@ -347,7 +336,7 @@ footer {
     padding: 10px 0;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:100%) {
    #imag{
   width: 100%;
   height: auto;
@@ -376,22 +365,29 @@ footer {
   text-decoration: underline;
   margin: 3%;
 }
+.intern{
+  text-align: left;
+  padding-left: 7%;
+}
+
+
+/* Table section*/
 
 .tablecontainer {
+  width: 100%;
   background-color: #f9f4f4;
 }
 
 table {
   border-collapse: collapse;
-  width: auto;
-  height: auto;
+  width: 100%;
   border: 1.5px solid #2c2828;
   text-align: center;
 }
 
 th, td {
    border: 1.5px solid #2c2828;
-   text-align: center; 
+   text-align: center;
 }
 td:first-child{
    border: 1.5px solid #2c2828;
@@ -400,21 +396,17 @@ td:first-child{
    text-decoration: underline;
    background-color: #e0edea;
    font-weight: bold;
+   /* overflow-x: scroll; */
+   
 }
 
-.intern{
-  background-color: #cee8df;
-}
-
-.half{
-  float: inline-start;
-  width: auto;
-  padding: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.half p{
-  text-align: left;
-}
+ .scroll-box {
+      width: 100%;       /* fixed width */
+      height: 62px;      /* fixed height */
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-y: auto;   /* vertical scroll */
+      overflow-x: hidden; /* disable horizontal scroll */
+    }
 
 
