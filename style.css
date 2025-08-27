@@ -374,6 +374,7 @@ footer {
 /* Table section*/
 
 .tablecontainer {
+  overflow-x: auto;
   width: 100%;
   background-color: #f9f4f4;
 }
@@ -409,6 +410,7 @@ td:first-child{
       overflow-y: auto;   /* vertical scroll */
       overflow-x: hidden; /* disable horizontal scroll */
     }
+
 
 
 
