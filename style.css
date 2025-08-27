@@ -379,6 +379,7 @@ footer {
 }
 
 table {
+  overflow-x: auto;
   border-collapse: collapse;
   width: 100%;
   border: 1.5px solid #2c2828;
@@ -408,5 +409,6 @@ td:first-child{
       overflow-y: auto;   /* vertical scroll */
       overflow-x: hidden; /* disable horizontal scroll */
     }
+
 
 
