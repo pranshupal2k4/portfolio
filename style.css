@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  width:100%;
 }
 
 .animated-name {
@@ -15,10 +14,11 @@
   background-attachment: fixed; /* This will also remain static */
   font-size: 3em;
   color: #ff0000; /* This color will be the default text color if the animation doesn't override it */
+  position:relative;
+  overflow:hidden;
 }
 
 .animated-text {
-  width: 100%;
   display: inline-block; /* Crucial for transform to work on inline elements */
   animation: my-animation 3s ease-in-out infinite alternate; /* Apply animation to the text only */
 }
@@ -412,6 +412,7 @@ td:first-child{
       overflow-y: auto;   /* vertical scroll */
       overflow-x: hidden; /* disable horizontal scroll */
     }
+
 
 
 
